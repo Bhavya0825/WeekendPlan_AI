@@ -1,0 +1,20 @@
+PROMPT_TEMPLATE = """
+I am spending a weekend in {city}. My mood is {mood} and I’m interested in {interests_str}. I have {total_hours} hours free over Saturday and Sunday.
+
+Suggest a realistic, fun, and well-paced 2-day weekend itinerary.
+Include specific activity names, brief descriptions, suggested timings for each activity, and incorporate suitable breaks and food spots.
+Please ensure the total time spent on activities and breaks on both days combined does not exceed {total_hours} hours.
+Prioritize real places if possible and use relevant emojis.
+
+Format the output using Markdown with clear headings for each day and bullet points for activities. For example:
+
+### Your Weekend Plan in [City Name] 🎉
+
+**Saturday**
+- ⏰ [Start Time] – [End Time]: [Activity Name] [Emoji] - [Brief description]. (e.g., Duration: X hours)
+- 🍕 [Time]: Lunch break.
+
+**Sunday**
+- ⏰ [Start Time] – [End Time]: [Activity Name] [Emoji] - [Brief description]. (e.g., Duration: Y hours)
+- ☕ [Time]: Coffee break.
+"""
